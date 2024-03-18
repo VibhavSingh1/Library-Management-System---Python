@@ -1,6 +1,6 @@
 """
 Test Script for UserManagement Subsystem:
-
+`sample only due to development time constraints`
 """
 
 import pytest
@@ -67,7 +67,7 @@ def test_delete_user(mock_storage) -> None:
     assert "1" not in mock_storage.data["users"]
 
 
-def test_list_users(mock_storage, capsys):
+def test_list_users(mock_storage, capsys) -> None:
     """Test for listing all users."""
     um = UserManagement(mock_storage)
     # Mock Data
@@ -82,7 +82,7 @@ def test_list_users(mock_storage, capsys):
     assert "alice" in captured.out.lower()
 
 
-def test_find_user(mock_storage, capsys):
+def test_find_user(mock_storage, capsys) -> None:
     """Test for finding a user."""
     um = UserManagement(mock_storage)
     # Mock Data

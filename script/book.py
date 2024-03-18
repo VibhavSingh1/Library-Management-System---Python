@@ -286,7 +286,7 @@ class BookManagement:
             # Get book based on isbn and store in found books
             book_info = books_data.get(value, None)
             if book_info is not None:
-                found_books[isbn] = book_info
+                found_books[value] = book_info
 
         elif how in ["author", "title"]:
             # loop over the books to search
