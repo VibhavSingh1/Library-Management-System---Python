@@ -1,0 +1,28 @@
+{
+    "3": {
+        "name": "dannn",
+        "email": "nad.dan@gmail.com",
+        "borrowed": [
+            "a1000"
+        ]
+    },
+    "5": {
+        "name": "placeholder",
+        "email": "place.holder@gmail.com"
+    },
+    "6": {
+        "name": "vibhav",
+        "email": "vibhav.singh@gmail.com"
+    },
+    "7": {
+        "name": "thunder",
+        "email": "thunderov@gmail.com",
+        "borrowed": [
+            "a2000"
+        ]
+    },
+    "8": {
+        "name": "ayush kumar",
+        "email": "ayu.kumar@gmail.com"
+    }
+}

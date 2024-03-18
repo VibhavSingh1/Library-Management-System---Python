@@ -1,0 +1,16 @@
+# Byte-compiled Python files
+*.pyc
+*.pyo
+__pycache__
+
+# Caches and logs
+*.pyc
+*.pyo
+__pycache__
+*.log
+
+# Virtual environment
+venv/
+
+# Directories
+log/*

@@ -1,0 +1,22 @@
+{
+    "a1000": {
+        "title": "100 miles up",
+        "author": "vibhav",
+        "available": false
+    },
+    "a2000": {
+        "title": "systemic altruism",
+        "author": "kneal",
+        "available": false
+    },
+    "a3000": {
+        "title": "thunder's wrath",
+        "author": "either kin",
+        "available": true
+    },
+    "a4000": {
+        "title": "deep in mountain",
+        "author": "sike lou",
+        "available": true
+    }
+}

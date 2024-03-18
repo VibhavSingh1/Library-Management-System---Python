@@ -1,0 +1,38 @@
+[
+    {
+        "user_id": "3",
+        "isbn": "a2000",
+        "action": "checkout",
+        "timestamp": "2024-03-17T13:11:58.221534"
+    },
+    {
+        "user_id": "3",
+        "isbn": "a1000",
+        "action": "checkout",
+        "timestamp": "2024-03-17T13:12:39.445119"
+    },
+    {
+        "user_id": "3",
+        "isbn": "a3000",
+        "action": "checkout",
+        "timestamp": "2024-03-17T13:14:30.508087"
+    },
+    {
+        "user_id": "3",
+        "isbn": "a2000",
+        "action": "checkin",
+        "timestamp": "2024-03-17T13:14:55.490409"
+    },
+    {
+        "user_id": "7",
+        "isbn": "a2000",
+        "action": "checkout",
+        "timestamp": "2024-03-17T13:32:59.651600"
+    },
+    {
+        "user_id": "3",
+        "isbn": "a3000",
+        "action": "checkin",
+        "timestamp": "2024-03-17T13:39:05.046677"
+    }
+]
