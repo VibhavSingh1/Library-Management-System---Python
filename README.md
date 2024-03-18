@@ -6,7 +6,7 @@ The Library Management System is a Python-based application that allows users to
 
 
 ## Installation
-1. Clone the repository: `git clone https://github.com/yourusername/lms.git`
+1. Clone the repository: `git clone https://github.com/VibhavSingh1/Library-Management-System---Python.git`
 2. Navigate to the project directory: `cd lms`
 3. Create a virtual environment:
    - On Windows:
