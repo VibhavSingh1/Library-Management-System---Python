@@ -276,44 +276,41 @@ class BookManagement:
         """
         # Clean the data to search
         value = value.strip().lower()
-
         # Get books data
         books_data = self.storage.data["books"]
+        # To store books found
+        found_books = {}
 
         # Check the field chosen to search upon
         if how == "isbn":
+            # Get book based on isbn and store in found books
             book_info = books_data.get(value, None)
-            if book_info is None:
-                book = None
-            else:
-                book = (value, book_info)
+            if book_info is not None:
+                found_books[isbn] = book_info
 
         elif how in ["author", "title"]:
             # loop over the books to search
             for isbn, book_info in books_data.items():
                 # compare
                 if how in book_info and book_info[how].lower() == value:
-                    book = (isbn, book_info)
-                    break
-                else:
-                    book = None
+                    found_books[isbn] = book_info
+
         # Case when 'how' don't match any availble options then it is an error
         else:
             raise ValueError("Invalid 'how' parameter found.")
 
         # If book is found then print data, else notify not found
-        if book is None:
+        if len(found_books) == 0:
             print(f"Book with {how}: {value} not found")
             logger.info(f"Book with {how}: {value} not found")
         else:
             print("\nBook Found:\n")
             df = pd.DataFrame(
-                book[1],  # Book data
-                index=[
-                    book[0],  # ISBN
-                ],
+                found_books.values(),
+                index=found_books.keys(),
             )
             df.index.name = "isbn"
+
             logger.info(f"Book Found with {how}: {value}")
             logger.debug(f"\n{df.to_string()}")
             print(df.to_string())
