@@ -10,9 +10,9 @@ from script.storage import Storage
 from script.user import UserManagement
 from script.utils import clear_screen, handle_error
 
+
 # Instantiate singleton LibraryLogger
 logger = LibraryLogger()
-
 # Instantiate singleton Storage
 storage = Storage()
 

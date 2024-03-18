@@ -40,6 +40,3 @@ if not os.path.exists(LOG_DIR_PATH):
 
 if __name__ == "__main__":
     print(ROOT_PATH)
-    print(LOG_DIR_PATH)
-    print(LOG_ERR_FILE_PATH)
-    print(LOG_FILE_PATH)

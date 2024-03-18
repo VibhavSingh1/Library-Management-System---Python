@@ -4,7 +4,6 @@ Test Script for UserManagement Subsystem:
 """
 
 import pytest
-
 from script.user import UserManagement
 
 
